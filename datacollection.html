@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data collection</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateForm() {
+            //get the value of form
+            var x = document.forms["myForm"]["fname"].value;
+			var w = document.forms["myForm"]["phone"].value;
+            var y = document.forms["myForm"]["sex"].value;
+            var z = document.forms["myForm"]["model"].value;
+            //Determine whether the value is empty
+            if (x == null || x == "") {
+                alert("you must fill out name");
+                return false;
+            }
+			//Determine whether the value is empty
+            if (w == null || w == "") {
+                alert("you must fill out phone number");
+                return false;
+            }
+            //Determine whether the value is empty
+            if (y == null || y == "") {
+                alert("you must fill out sex");
+                return false;
+            }
+            //Determine whether the value is empty
+            if (z == null || z == "") {
+                alert("you must fill out model of the car");
+                return false;
+            }
+
+            var e = document.forms["myForm"]["email"].value;
+            //email must have symbol @
+            var atpos = e.indexOf("@");
+            //email must have symbol .
+            var dotpos = e.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= e.length) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myForm" action="http://jkorpela.fi/cgi-bin/echo.cgi " onsubmit="return validateForm()">
+        <h1>A DATA COLLECTION ABOUT YOUR CARS FOE SALE</h1><br> <br> 
+        <h2>YOU CAN LIST YOUR OWNCAR FOR SALE</h2>
+		<br>
+		<h3>1.Information about the person submitting</h3>
+        *Name: <input type="text" name="fname"> <br> 
+		*Phone: <input type="text" name="phone"> <br>
+		*Email：<input type="text" name="email"> <br> 
+		*Sex： <input type="radio" id="male" name="sex" value="male"><label for="male">male</label> <input type="radio" id="female" name="sex" value="female"><label for="female">female</label> <br> 
+		How many cars you have previously submitted:<input type="text"> <br>
+		Have you bought a car in the past five years?<input type="radio" id="y" name="binary"><label for="y">Yes</label> <input type="radio"
+            id="n" name="binary">
+        <label for="n">No</label>
+		<br> Are you willing to pay in installments?<input type="radio" id="y" name="binary"><label for="y">Yes</label> <input type="radio"
+            id="n" name="binary">
+        <label for="n">No</label><br>
+        Where do you know Jim's Cars store?
+        <select name="type">
+		<option selected="selected">-please select one answer-</option>
+		<option value="1">I know from my friends</option>
+        <option value="2">I know from social media</option>
+		<option value="3">I know from the advertisement</option>
+		<option value="4">I have seen this store before</option>
+		<option value="5">other</option>
+		</select>		<br> <br> 
+		     <h3>2.Information about the car</h3>
+			 *Model of the car:<input type="text" name="model"> 
+		<br> The category of the car: <select name="type">
+            <option selected="selected">-select the category-</option>
+            <option value="luxury">luxury</option>
+            <option value="sport">sport</option>
+            <option value="family">family</option>
+        </select>
+		<br>
+		Car registration time：
+        <select name="year">
+		<option selected="selected">-please type year-</option>
+		<option value="2012">2012</option>
+        <option value="2013">2013</option>
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+		<option value="2018">2018</option>
+		<option value="2019">2019</option>
+		<option value="2020">2020</option>
+		</select>
+        <select name="month">
+		<option selected="selected">-please type month-</option>
+		<option value="Janurary">Janurary</option>
+		<option value="February">February</option>
+		<option value="March">March</option>
+		<option value="April">April</option>
+		<option value="May">May</option>
+		<option value="June">June</option>
+		<option value="July">July</option>
+		<option value="August">August</option>
+		<option value="September">September</option>
+		<option value="October">October</option>
+		<option value="November">November</option>
+		<option value="December">December</option>
+		</select><br>
+		Color of the car:<input type="text" name="color"> 
+        <br> <textarea placeholder="Describe your car here" name="introduction" cols="50" rows="10"></textarea>
+        <br> More questions：
+        <input type="checkbox" name="type">whether allow Jim's coupon codes to be used <input type="checkbox" name="type">whether buy a car in Jim's shop before<br>
+        <br>
+        <input type="submit" value="Submit"> <input type="reset" value="Clear"><br><br><br>
+
+        <h3>Please rest assured that we will protect your privacy properly</h3>
+        <ul>
+            <li>We will not disclose your privacy to other third parties</li>
+            <li>We will follow Australia's privacy policy strictly</li>
+        </ul>
+			<img src="img\1.jpg" width="300px" height="200px" alt="Thanks" >
+    </form>
+    <footer>Copyright (C) Jims_Car 2017-2021, All Rights Reserved TCPICP֤6666</footer>
+
+</body>
+
+</html>

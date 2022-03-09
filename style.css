@@ -1,0 +1,134 @@
+body {margin:10px; background-image:url('img/bg.jpeg'); color:black;font-family:arial;}
+* {
+    margin: 0 0 0 1cm;
+    padding: 0;
+}
+
+.navgation {
+    height: 60px;
+    line-height: 60px;
+    border-top: 4px solid #cc9933;
+    border-bottom: 4px solid #cc9966;
+    background-color: #ccffff;
+    margin-bottom: 10px;
+}
+
+.navgation a {
+    display: inline-block;
+    height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #4c4c4c;
+    font-size: 12px;
+	font-weight:900;
+}
+/*Normal, unvisited link*/
+a:link {
+	color:#000000;
+}     
+/*Links that the user has visited*/
+a:visited {
+	color:#686868;
+
+}
+/*When the user mouses over the link*/
+a:hover {
+    color: red;
+    background-color: #686868;
+    font-size: 18px;
+}
+/* When the mouse is clicked */
+a:active {
+	color:#330066;
+}  
+/*Level 1 heading appropriate for the homepage. Centre the heading.*/	
+h1{
+	text-align:center;
+}
+
+.welcome{
+	text-align:center;
+	font-size:20px;
+	font-weight:700;
+}
+h2 {
+    font-weight: 500;
+    color: #gray;
+	text-decoration:underline;
+}
+
+.header img {
+    margin-top: 15px;
+	margin-bottom:15px;
+	width:1200px;
+}
+
+.intro {
+    margin-top: 15px;
+}
+
+.intro p {
+    font-size: 20px;
+    padding: 8px;
+	margin-bottom:20px;
+}
+
+.box1 ul li {
+    border: 1px solid black;
+	list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+#foot { 
+    width: 100%;
+	background-color:gray;
+    color: red;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 20px;
+    line-height: 20px; 
+	
+}
+
+
+#head { width: 100% }
+
+#location { text-align: left }
+#location img { vertical-align: top; float: left }
+
+#quick { vertical-align: top; text-align: right }
+
+#main { width: 100%; border-top-style: groove; border-bottom-style: groove }
+
+#menu { width: 15%; border-right-style: groove; vertical-align: top; padding: 0 }
+#menu ul { margin: 0; padding: 0 }
+#menu li { list-style-type:none; margin: 1ex 1ex 1ex 0ex; background-color: #eeeeee }
+
+h1 { text-align: center }
+h2 { text-align: left }
+hr { width: 50%; text-align: center; color:navy }
+
+
+
+#copyright { vertical-align: top; text-align: right; font-size: x-small }
+
+kbd { font-family: monospace }
+samp { font-family: monospace }
+.menu { font-family: monospace }
+.file { font-family: monospace }
+.host { font-family: monospace }
+
+div.img { text-align: center; padding: 0.5em }
+div.img img { border-style: solid }
+
+div.toc { text-align: center; margin-left: auto; margin-right: auto }
+
+.due { font-size: large; font-weight: bold }
+strong.warning { color: #cc0000; background-color: #ffff33; border-style: none }
+.warning { text-align: center; color: #cc0000; background-color: #ffff33; border-style: outset }
+.warning h3 { font-size: x-large; text-decoration: underline }
+.warning p { font-style: italic }
+.todo { color: red }

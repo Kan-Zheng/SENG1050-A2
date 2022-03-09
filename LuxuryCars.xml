@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Category.xsl"?>
+<!DOCTYPE JimCars [
+<!ELEMENT JimCars (CarModel, Brand, Description, Cost, Make, Engine, Official_0to100KM_time, MaximumPower, SafetyRating, Extras+, CouponCode?, Reviews*, Picture+, URL)>
+<!ELEMENT CarModel (#PCDATA)>
+<!ELEMENT Brand (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Cost (#PCDATA)>
+<!ELEMENT Make (#PCDATA)>
+<!ELEMENT Engine (#PCDATA)>
+<!ELEMENT Official_0to100KM_time (#PCDATA)>
+<!ELEMENT MaximumPower (#PCDATA)>
+<!ELEMENT SafetyRating (#PCDATA)>
+<!ELEMENT Extras (#PCDATA)>
+<!ELEMENT CouponCode (#PCDATA)>
+<!ELEMENT Reviews (#PCDATA)>
+<!ELEMENT Picture (#PCDATA)>
+<!ELEMENT URL (#PCDATA)>
+<!ATTLIST Cost currencyType CDATA "$">
+<!ATTLIST Official_0to100KM_time time CDATA "second">
+<!ATTLIST MaximumPower unit CDATA "kW">
+<!ENTITY stars "five">
+<!ENTITY Additional_Cost "2000$ Insurance ">
+]>
+<JimCars>
+	<Car>
+		<CarModel>760</CarModel>
+		<Brand>BMW</Brand>
+		<Description>BMW family flagship luxury car</Description>
+		<Cost currencyType="$">350000</Cost>
+		<Make>Bavarian Engine Manufacturing Co., Ltd</Make>
+		<Engine>6.6T V12</Engine>
+		<Official_0to100KM_time time="second">3.8</Official_0to100KM_time>
+		<MaximumPower unit="kW">430</MaximumPower>
+		<SafetyRating>&stars;</SafetyRating>
+		<Extras>&Additional_Cost;</Extras>
+		<CouponCode>BMW666</CouponCode>
+		<Reviews>If you are a successful businessman, then the 760 will be your most suitable luxury car</Reviews>
+		<Picture>img/760.jpg</Picture>
+		<URL>https://www.bmw.com/en-au/home.html</URL>
+	</Car>
+	<Car>
+		<CarModel>A8L</CarModel>
+		<Brand>Audi</Brand>
+		<Description>As the flagship luxury sedan of the Audi family, the A8L combines Audi's most high-end vehicle system</Description>
+		<Cost currencyType="$">300000</Cost>
+		<Make>Volkswagen Group</Make>
+		<Engine>4.0T V8</Engine>
+		<Official_0to100KM_time time="second">4.4</Official_0to100KM_time>
+		<MaximumPower unit="kW">460</MaximumPower>
+		<SafetyRating>&stars;</SafetyRating>
+		<Extras>&Additional_Cost;</Extras>
+		<CouponCode>Audi888</CouponCode>
+		<Reviews>The sense of science and technology that A8L brings to me is something other cars don’t have. I seem to be in the future</Reviews>
+		<Picture>img/A8L.jpg</Picture>
+		<URL>https://www.audi.com/en.html</URL>
+	</Car>
+	<Car>
+		<CarModel>S500L</CarModel>
+		<Brand>Mercedes</Brand>
+		<Description>As the flagship sedan of Mercedes-Benz, its luxury and comfort are among the best in its class</Description>
+		<Cost currencyType="$">380000</Cost>
+		<Make>Mercedes-Benz Group</Make>
+		<Engine>3.0T L6</Engine>
+		<Official_0to100KM_time time="second">5.5</Official_0to100KM_time>
+		<MaximumPower unit="kW">336</MaximumPower>
+		<SafetyRating>&stars;</SafetyRating>
+		<Extras>&Additional_Cost;</Extras>
+		<CouponCode>Benz888</CouponCode>
+		<Reviews>If you are a successful person, then the three-pointed star will illuminate your career and future</Reviews>
+		<Picture>img/S500.jpg</Picture>
+		<URL>https://www.mercedes-benz.com.au/</URL>
+	</Car>
+</JimCars>

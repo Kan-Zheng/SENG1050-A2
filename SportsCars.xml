@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Category.xsl"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE JimCars [
+<!ELEMENT JimCars (CarModel, Brand, Description, Cost, Make, Engine, Official_0to100KM_time, MaximumPower, SafetyRating, Extras+, CouponCode?, Reviews*, Picture+, URL)>
+<!ELEMENT CarModel (#PCDATA)>
+<!ELEMENT Brand (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Cost (#PCDATA)>
+<!ELEMENT Make (#PCDATA)>
+<!ELEMENT Engine (#PCDATA)>
+<!ELEMENT Official_0to100KM_time (#PCDATA)>
+<!ELEMENT MaximumPower (#PCDATA)>
+<!ELEMENT SafetyRating (#PCDATA)>
+<!ELEMENT Extras (#PCDATA)>
+<!ELEMENT CouponCode (#PCDATA)>
+<!ELEMENT Reviews (#PCDATA)>
+<!ELEMENT Picture (#PCDATA)>
+<!ELEMENT URL (#PCDATA)>
+<!ATTLIST Cost currencyType CDATA "$">
+<!ATTLIST Official_0to100KM_time time CDATA "second">
+<!ATTLIST MaximumPower unit CDATA "kW">
+<!ENTITY stars "five">
+<!ENTITY Additional_Cost "2000$ Insurance ">
+]>
+<JimCars>
+	<Car>
+		<CarModel>M3</CarModel>
+		<Brand>BMW</Brand>
+		<Description>Mid-size sports sedan,the sports representative of the BMW family</Description>
+		<Cost currencyType="$">12000</Cost>
+		<Make>Bavarian Engine Manufacturing Co., Ltd</Make>
+		<Engine>3.0T L6</Engine>
+		<Official_0to100KM_time time="second">3.9</Official_0to100KM_time>
+		<MaximumPower unit="kW">375</MaximumPower>
+		<SafetyRating>&stars;</SafetyRating>
+		<Extras>&Additional_Cost;</Extras>
+		<CouponCode>BMW666</CouponCode>
+		<Reviews>M3 can bring intense driving pleasure to young people</Reviews>
+		<Picture>img/m3.jpg</Picture>
+		<URL>https://www.bmw.com/en-au/home.html</URL>
+	</Car>
+	<Car>
+		<CarModel>RS5</CarModel>
+		<Brand>Audi</Brand>
+		<Description>The Audi sport series, as a high-performance coupe accelerated by Audi, allows you to feel ample sports genes</Description>
+		<Cost currencyType="$">13000</Cost>
+		<Make>Volkswagen Group</Make>
+		<Engine>2.9T V6</Engine>
+		<Official_0to100KM_time time="second">3.9</Official_0to100KM_time>
+		<MaximumPower unit="kW">331</MaximumPower>
+		<SafetyRating>&stars;</SafetyRating>
+		<Extras>&Additional_Cost;</Extras>
+		<CouponCode>Audi888</CouponCode>
+		<Reviews>As the high-performance coupe of the Audi family, its design and performance are very nice</Reviews>
+		<Picture>img/RS5.jpg</Picture>
+		<URL>https://www.audi.com/en.html</URL>
+	</Car>
+	<Car>
+		<CarModel>AMGc63</CarModel>
+		<Brand>Mercedes</Brand>
+		<Description>As the performance version of the Mercedes family, it not only gives you a pleasant experience but also a sense of luxury</Description>
+		<Cost currencyType="$">17000</Cost>
+		<Make>Mercedes-Benz Group</Make>
+		<Engine>4.0T V8</Engine>
+		<Official_0to100KM_time time="second">4.1</Official_0to100KM_time>
+		<MaximumPower unit="kW">350</MaximumPower>
+		<SafetyRating>&stars;</SafetyRating>
+		<Extras>&Additional_Cost;</Extras>
+		<CouponCode>Benz888</CouponCode>
+		<Reviews>C63 is a great car, not only has a sporty feel, but also has a luxurious and comfortable experience</Reviews>
+		<Picture>img/c63.jpg</Picture>
+		<URL>https://www.mercedes-benz.com.au/</URL>
+	</Car>
+</JimCars>
